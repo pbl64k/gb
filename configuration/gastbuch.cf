@@ -1,0 +1,9 @@
+:db
+interface=DBI
+driver=mysql
+database=
+username=
+password=
+
+:tuning
+defaultframe=25
