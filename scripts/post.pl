@@ -1,6 +1,4 @@
-#!/devel/perl/bin/perl
 #!/usr/bin/perl
-#!C:\Pavel\Web\Perl\Bin\Perl
 
 $me='post';
 
@@ -67,6 +65,10 @@ if($db->{_STATEMENTS}{authorize}->fetchrow)
   if($vars->{ARRAY_POST}{mode2}[0])
   {
     # mode 2 is really beyond my ability in English.
+    # In Russian version it replaced fortis consonants with lenis
+    # counterparts, but I rather doubt that would produce the same
+    # impression in English and can't think of an appropriate
+    # replacement either.
   }
 
   if($vars->{ARRAY_POST}{mode3}[0])

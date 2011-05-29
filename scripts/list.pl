@@ -1,6 +1,4 @@
-#!/devel/perl/bin/perl
 #!/usr/bin/perl
-#!C:\Pavel\Web\Perl\Bin\Perl
 
 $me='list';
 

@@ -6,3 +6,39 @@ but the thought of HOW it was made gives me shivers now.
 Let it remain here a sobering testament of how much of an idiot I was ten
 years back. (And I can only hope that in ten more years I shall perceive
 the current me quite as much of an idiot.)
+
+SETTING UP:
+
+0. This assumes a Linux host and Apache 2, Perl 5 and MySQL 5 already
+running.
+
+1. Make sure the shebangs in scripts/*.pl point to a Perl interpreter.
+Either link /usr/bin/perl to your interpreter or change the shebangs if
+yours is located elsewhere.
+
+2. chmod 0755 scripts/*.pl
+
+3. Add the ScriptAlias directive to your Apache configuration. See
+install/apache.conf
+
+4. Restart Apache.
+
+5. Configure database access by editing configuration/gastbuch.cf
+
+6. Create the database from the schema in install/schema.sql - note that
+user with ID 1 is the (only) administrator and also the target of the
+script listing the GB rules (or whatnot) - by gathering all the posts
+with "(number). " at the start of the subject.
+
+7. Make sure mysqld recognizes the account gb is configured to use and
+grant access to the corresponding database (SELECT, INSERT, UPDATE,
+DELETE privileges).
+
+8. login_form.pl is, surprisingly, the login form and adduser_form.pl
+allows creation of new user accounts.
+
+9. Enjoy the horror.
+
+(The scripts will attempt to write a simple log to utility/access_log
+but I would advise against using that. There are also some simple
+scripts for analyzing the access statistics in utility/)

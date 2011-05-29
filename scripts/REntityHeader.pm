@@ -48,7 +48,7 @@ sub replace
   my $value=shift;
   if(!defined($self->{$head}))
   {
-    RErrorHandler->handle(0,$self,"'$head' does not exists -- adding instead");
+    #RErrorHandler->handle(0,$self,"'$head' does not exist -- adding instead");
     $self->add($head,$value);
   }
   else
