@@ -1,8 +1,9 @@
 WARNING: I haven't audited this recently and do not know whether there
-any security risks. It survived a few years of being publicly available,
-but that was a long time ago and I would attribute it to the board being
-a low-profile target rather than quality of the code. I strongly advise
-deploying where available to the general public, do so at your own risk.
+are any security risks. It survived a few years of being publicly
+available, but that was a long time ago and I would attribute it to the
+board being a low-profile target rather than quality of the code. I
+strongly advise against deploying where available to the general public,
+do so at your own risk.
 
 I wrote this wonky little message board ca. 2000 at a friend's request.
 It went live and did its wonky little thing for a couple of years
